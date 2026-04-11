@@ -20,34 +20,36 @@ export function SummaryCard({data}){
 
     return (
         <>
-          <div className="container">
+          <div className="container min-[1440px]:flex">
             <div 
-            className="result text-white flex flex-col gap-3 items-center text-center
-             py-3 px-12 rounded-bl-3xl rounded-br-3xl"
+            className="result w-screen min-[1440px]:w-[40%] min-[1440px]:rounded-t-3xl text-white flex 
+            flex-col gap-3 min-[1440px]:gap-7 items-center text-center
+             py-3 min-[1440px]:py-8 px-12 rounded-bl-3xl rounded-br-3xl"
              style={{background: "linear-gradient( to bottom , hsl(252, 100%, 67%), hsl(241, 81%, 54%))"}}
              >
-                <h3 className="font-bold text-gray-200">Your Result</h3>
+                <h3 className="font-bold text-gray-200 min-[1440px]:text-2xl">Your Result</h3>
 
                 <div 
-                className="average rounded-[100%] py-4.5 px-6.5"
+                className="average rounded-[100%] py-4.5 px-6.5 min-[1440px]:py-9 min-[1440px]:px-11"
                 style={{background: "linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0))"}}
                 >
-                        <p className="text-6xl font-extrabold">76</p>
-                        <p className="font-bold" style={{color: "hsl(241, 100%, 89%)"}}>of 100</p>
+                        <p className="text-6xl font-extrabold min-[1440px]:text-[6rem]">76</p>
+                        <p className="font-bold min-[1440px]:font-[3rem]" style={{color: "hsl(241, 100%, 89%)"}}>of 100</p>
                 </div>
 
-                <p className="text-2xl font-bold mb-[-8px]" >Great</p>
-                <p className="text-[18px]" style={{color: "hsl(221, 100%, 96%)"}}>You scored higher than 65% of the people who have taken these tests</p>
+                <p className="text-2xl font-bold mb-[-8px] min-[1440px]:font-extrabold min-[1440px]:text-3xl" >Great</p>
+                <p className="text-[18px] min-[1440px]:text-2xl min-[1440px]:text-center" style={{color: "hsl(221, 100%, 96%)"}}>You scored higher than 65% of the people who have taken these tests</p>
             </div>
 
-            <div className="summary py-1 px-7">
-                <h3 className=" text-gray-700 py-4 font-bold">Summary</h3>
+            <div className="summary py-1 px-7 min-[1440px]:pl-25 min-[1440px]:pr-12 min-[1440px]:w-[45%] min-[1440px]:h-[60vh] 
+            min-[1440px]:rounded-r-3xl">
+                <h3 className=" text-gray-700 py-4 font-bold min-[1440px]:text-2xl min-[1440px]:py-8">Summary</h3>
                 {/* list content here */}
-                <div className="summary-items flex flex-col gap-y-5">
+                <div className="summary-items flex flex-col gap-y-5 min-[1440px]:gap-6">
                     {
                          data.map((dataObj) => {
                     return  <div 
-                            className="flex justify-between py-3 rounded-lg px-3" 
+                            className="flex justify-between py-3 min-[1440px]:py-4 rounded-lg px-3 min-[1440px]:text-xl" 
                             style={{backgroundColor: bgColours[dataObj.category]}} 
                             key={dataObj.category}>
 
@@ -62,7 +64,8 @@ export function SummaryCard({data}){
                     }
                 </div>
                 <button 
-                className="border rounded-3xl py-3 w-full mt-5 text-white"
+                className="btn border rounded-3xl py-3 min-[1440px]:py-4 min-[1440px]:rounded-4xl w-full
+                 mt-5 text-white cursor-pointer"
                 style={{backgroundColor: "hsl(224, 30%, 27%)"}}
                 >
                     Continue</button>
