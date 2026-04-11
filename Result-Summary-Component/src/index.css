@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Hanken";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500 800;
+}
+
+body{
+  font-family: "Hanken";
+  font-weight: 500;
+}
+
+button{
+  font-weight: 600;
+}
