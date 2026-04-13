@@ -24,10 +24,10 @@ Users should be able to:
 - **Bonus**: Use the local JSON data to dynamically populate the content
 
 ### Screenshot
-** On mobile(375px) **
-![](./screenshot.jpg)
-** On desktop(1440px) **
-![](./screenshot.jpg)
+**On mobile(375px)**  
+<img src="public/assets/images/mobile-screenshot.png" width="300" />  
+**On desktop(1440px)**  
+<img src="public/assets/images/desktop-screenshot.png" width="500" />
 
 ### Links
 
